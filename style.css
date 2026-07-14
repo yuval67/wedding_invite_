@@ -39,25 +39,26 @@ body {
   align-items: center;
   justify-content: center;
 
-  padding: 4vh 7vw;
+  padding: 2vh 7vw;
 }
 
 .cover-title {
   display: block;
   opacity: 0;
-  transform: translateY(18px);
+  transform: translateY(12px);
   animation: floatIn 0.9s ease forwards;
 }
 
 .title-1 {
-  width: min(45vw, 300px);
-  margin-bottom: 2px;
+  width: min(42vw, 250px);
+  margin-bottom: -12px;
   animation-delay: 0.2s;
 }
 
 .title-2 {
-  width: min(70vw, 500px);
-  margin-bottom: 8px;
+  width: min(66vw, 470px);
+  margin-top: -8px;
+  margin-bottom: -12px;
   animation-delay: 0.55s;
 }
 
@@ -68,7 +69,7 @@ body {
   cursor: pointer;
   width: min(58vw, 430px);
   opacity: 0;
-  transform: translateY(18px);
+  transform: translateY(12px);
   animation: floatIn 0.9s ease forwards;
   animation-delay: 0.9s;
 }
@@ -85,10 +86,10 @@ body {
 }
 
 .press-text {
-  width: min(48vw, 360px);
-  margin-top: 8px;
+  width: min(30vw, 220px);
+  margin-top: -12px;
   opacity: 0;
-  transform: translateY(18px);
+  transform: translateY(10px);
   animation: floatIn 0.9s ease forwards;
   animation-delay: 1.25s;
 }
@@ -103,17 +104,15 @@ body {
   padding: 0 0 40px;
 }
 
-/* אזור הרקע של המעטפה בלבד */
 .open-area {
   width: 100%;
   background: #f3eadc;
-  padding: 24px 0 20px;
+  padding: 18px 0 14px;
 }
 
-/* הרקע השני נמצא רק סביב המעטפה */
 .open-stage {
   position: relative;
-  width: min(94vw, 900px);
+  width: min(100vw, 1180px);
   aspect-ratio: 1536 / 864;
   margin: 0 auto;
   background-image: url("assets/second_bk.png");
@@ -126,15 +125,15 @@ body {
 /* גב המעטפה */
 .open-envelope-back {
   position: absolute;
-  width: 54%;
-  left: 23%;
-  bottom: 8%;
+  width: 58%;
+  left: 21%;
+  bottom: 7.5%;
   z-index: 1;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
 }
 
-/* הפתק שמבצבץ */
+/* הפתק */
 .open-note {
   position: absolute;
   width: 31%;
@@ -146,12 +145,12 @@ body {
   animation-delay: 0.35s;
 }
 
-/* החלק הקדמי של המעטפה */
+/* החלק הקדמי של המעטפה - טיפה גדול יותר כדי שיחפוף */
 .open-envelope-front {
   position: absolute;
-  width: 54%;
-  left: 23%;
-  bottom: 8%;
+  width: 60%;
+  left: 20%;
+  bottom: 7.2%;
   z-index: 3;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
@@ -226,17 +225,18 @@ body {
 @media (max-width: 768px) {
   .cover-stage {
     width: 100vw;
-    padding: 5vh 6vw;
+    padding: 2vh 6vw;
   }
 
   .title-1 {
-    width: 52vw;
-    margin-bottom: 0;
+    width: 48vw;
+    margin-bottom: -12px;
   }
 
   .title-2 {
-    width: 76vw;
-    margin-bottom: 6px;
+    width: 72vw;
+    margin-top: -8px;
+    margin-bottom: -14px;
   }
 
   .envelope-button {
@@ -244,23 +244,28 @@ body {
   }
 
   .press-text {
-    width: 56vw;
-    margin-top: 6px;
+    width: 34vw;
+    margin-top: -14px;
   }
 
   .open-area {
-    padding: 16px 0 12px;
+    padding: 10px 0 8px;
   }
 
   .open-stage {
     width: 100vw;
   }
 
-  .open-envelope-back,
+  .open-envelope-back {
+    width: 60%;
+    left: 20%;
+    bottom: 7.5%;
+  }
+
   .open-envelope-front {
-    width: 58%;
-    left: 21%;
-    bottom: 8%;
+    width: 62%;
+    left: 19%;
+    bottom: 7.2%;
   }
 
   .open-note {
