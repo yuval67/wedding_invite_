@@ -118,8 +118,7 @@ body {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-  animation: openEnter 0.9s ease forwards;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* המעטפה הפתוחה והחזית באותו גודל ומיקום */
