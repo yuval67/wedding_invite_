@@ -45,7 +45,6 @@ body {
 .cover-title {
   display: block;
   opacity: 0;
-  transform: translateY(12px);
   animation: floatIn 0.9s ease forwards;
 }
 
@@ -68,9 +67,8 @@ body {
   padding: 0;
   cursor: pointer;
   width: min(52vw, 380px);
+
   opacity: 0;
-  transform: translateY(-20px);
-  
   animation: floatIn 0.9s ease forwards;
   animation-delay: 0.9s;
 }
@@ -89,8 +87,8 @@ body {
 .press-text {
   width: min(30vw, 220px);
   margin-top: -18px;
+
   opacity: 0;
-  transform: translateY(10px);
   animation: floatIn 0.9s ease forwards;
   animation-delay: 1.25s;
 }
@@ -126,9 +124,9 @@ body {
 /* גב המעטפה */
 .open-envelope-back {
   position: absolute;
-  width: 60%;
-  left: 19%;
-  bottom: 6%;
+  width: 52%;
+  left: 22%;
+  bottom: 7.8%;
   z-index: 1;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
@@ -140,7 +138,7 @@ body {
   width: 29%;
   left: 35.5%;
   bottom: 43%;
-  z-index: 3;
+  z-index: 2;
   transform: translateY(24px);
   animation: noteRise 1.1s ease forwards;
   animation-delay: 0.35s;
@@ -149,9 +147,9 @@ body {
 /* החלק הקדמי של המעטפה */
 .open-envelope-front {
   position: absolute;
-  width: 55%;
+  width: 60%;
   left: 19%;
-  bottom: 4%;
+  bottom: 6%;
   z-index: 3;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
@@ -191,6 +189,11 @@ body {
 
 /* אנימציות */
 @keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(-22px);
+  }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -210,6 +213,7 @@ body {
     opacity: 0;
     transform: translateY(18px) scale(0.97);
   }
+
   to {
     opacity: 1;
     transform: translateY(0) scale(1);
@@ -242,7 +246,6 @@ body {
 
   .envelope-button {
     width: 62vw;
-    transform: translateY(-8px);
   }
 
   .press-text {
