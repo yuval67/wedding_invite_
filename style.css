@@ -88,7 +88,7 @@ body {
 
 .press-text {
   width: min(24vw, 175px);
-  margin-top: -20px;
+  margin-top: 4px;
   animation-delay: 1.25s;
 }
 
