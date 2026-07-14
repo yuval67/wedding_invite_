@@ -125,9 +125,9 @@ body {
 /* גב המעטפה */
 .open-envelope-back {
   position: absolute;
-  width: 54%;
-  left: 23%;
-  bottom: 8%;
+  width: 52%;
+  left: 22%;
+  bottom: 7.8%;
   z-index: 1;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
