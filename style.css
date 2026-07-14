@@ -56,14 +56,14 @@ body {
 .title-1 {
   width: min(40vw, 240px);
   margin-bottom: -16px;
-  animation-delay: 0.2s;
+  animation-delay: 0.35s;
 }
 
 .title-2 {
   width: min(64vw, 455px);
   margin-top: -8px;
   margin-bottom: -24px;
-  animation-delay: 0.55s;
+  animation-delay: 0.70s;
 }
 
 .envelope-button {
@@ -72,7 +72,7 @@ body {
   padding: 0;
   cursor: pointer;
   width: min(49vw, 360px);
-  animation-delay: 0.9s;
+  animation-delay: 0.95s;
 }
 
 .closed-envelope {
