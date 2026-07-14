@@ -149,9 +149,9 @@ body {
 /* החלק הקדמי של המעטפה */
 .open-envelope-front {
   position: absolute;
-  width: 60%;
+  width: 55%;
   left: 19%;
-  bottom: 6%;
+  bottom: 4%;
   z-index: 3;
   display: block;
   filter: drop-shadow(0 14px 22px rgba(55, 38, 22, 0.2));
